@@ -5,6 +5,7 @@ indent() {
 }
 
 echo "-----> Found a hello.txt"
+echo env | indent
 
 # if hello.txt is empty, abort the build
 if [ ! -s $1/hello.txt ]; then
